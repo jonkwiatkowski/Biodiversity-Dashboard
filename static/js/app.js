@@ -90,6 +90,23 @@ function DrawGauge(sampleId) {
 
 function ShowMetadata(sampleId) {
     console.log(`ShowMetadata(${sampleId})`);
+
+    d3.json(url).then((data) => {
+        let metadata = data.metadata;
+        console.log(metadata);
+
+        // Filter data
+        let result = metadata.filter(meta => meta.id == sampleId)[0];
+        let demographicInfo = d3.select('#sample-metadata');
+
+        // Clear existing data in demographicInfo
+        demographicInfo.html('');
+
+        // Add key and value pair to the demographicInfo panel
+        Object.entries(result).forEach(([key, value]) => {
+            demographicInfo.append('h6').text(`${key}: ${value}`);
+        });
+    });
 }
 
 function optionChanged(sampleId) {
