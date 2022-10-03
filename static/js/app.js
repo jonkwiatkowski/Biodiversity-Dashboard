@@ -84,9 +84,6 @@ function DrawBubblechart(sampleId) {
     })
 }
 
-function DrawGauge(sampleId) {
-    console.log(`DrawGauge(${sampleId})`);
-}
 
 function ShowMetadata(sampleId) {
     console.log(`ShowMetadata(${sampleId})`);
@@ -145,9 +142,6 @@ function InitDashboard() {
 
         // Draw the bubblechart for the selected sample id
         DrawBubblechart(initialId);
-
-        // Show the gauge
-        DrawGauge(initialId);
 
         // Show the metadata for the selected sample id
         ShowMetadata(initialId);
