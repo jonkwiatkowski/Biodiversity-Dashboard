@@ -5,7 +5,7 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 ## Website Link
 
-[Belly Button Biodiversity Dashboard](https://jonkwiatkowski.github.io/belly-button-challenge/)
+[Belly Button Biodiversity Dashboard](https://jonkwiatkowski.github.io/Biodiversity-Dashboard/)
 
 ## Outline
 
